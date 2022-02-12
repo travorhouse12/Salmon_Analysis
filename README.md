@@ -8,7 +8,7 @@ Database systems to use:
 - Amazon AWS
 - Mongo
 
-ROLES
+**ROLES**
 
 Square: Travor – His job is to manage the repository and make sure everything is up to date, and clean for our project.
 
@@ -20,7 +20,7 @@ X: Nora – This member will oversee which technologies to use for each step of 
 
 We have decided on these roles for one another but are not limited to role in any way. We will all be working through each role and helping one another with ideas and feedback which is important for the project to run smoothly!
 
-VISUALIZATION OUTLINE
+**VISUALIZATION OUTLINE**
 
 This is a small mockup of potential visualization tools we can possibly use for our project:
 
