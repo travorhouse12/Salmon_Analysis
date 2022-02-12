@@ -1,5 +1,13 @@
 # Salmon_Analysis
 
+## Database Mockup
+Database systems to use:
+
+- Microsoft Excel
+- Postgres/pgAdmin
+- Amazon AWS
+- Mongo
+
 ROLES
 
 Square: Travor – His job is to manage the repository and make sure everything is up to date, and clean for our project.
