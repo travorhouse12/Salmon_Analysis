@@ -45,14 +45,21 @@ Database systems to use:
 - Mongo
 
 
-Selected topic: Population Change in Chinook Salmon
+**Selected Topic: 
 
-Reasons why selected:
+Population Change in Chinook Salmon
+
+**Reason Why We Selected This Data:
 
 We chose this topic because the population of Chinook Salmon are very local to the Pacific Northwest. It is very important to understand what is going on within the local watersheds to help prevent disaster. This project will help us really understand what has happened over so many years with the spawning and reproduction of this species, and what may have caused an increase or a decrease in this population!
 
 
+**Description Of The Data Source: 
 
 Our data source is coming from NOAA.Gov. This link will bring you directly to the data source. This dataset has more than 30 + columns and 60,000+ rows so there is plenty of data to work with. We will not need all of this data for the main portion of the project but may need to go back and use it for a comparison later on. You can see where we filtered this very large dataset to contain only the chinook salmon populations in the Filter_Fish_Data.ipynb. 
 
-Question we are looking to answer: can salmon populations be predicted? Are salmon populations stable? Is the work being done to restore salmon habitat currently effective?
+Link to our data source https://www.webapps.nwfsc.noaa.gov/apex/parrdata/inventory/tables/table/population_data_and_references_for_the_salmon_population_summary_sps_database 
+
+**Questions We Are Looking To Answer: 
+
+Can salmon populations be predicted? Are salmon populations stable? Is the work being done to restore salmon habitat currently effective?
