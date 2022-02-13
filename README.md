@@ -41,7 +41,6 @@ Database systems to use:
 - Amazon AWS
 - Mongo
 
-## PRESENTATION PORTION FOR SEGMENT 1
 
 Selected topic: Population Change in Chinook Salmon
 
@@ -50,7 +49,6 @@ Reasons why selected:
 We chose this topic because the population of Chinook Salmon are very local to the Pacific Northwest. It is very important to understand what is going on within the local watersheds to help prevent disaster. This project will help us really understand what has happened over so many years with the spawning and reproduction of this species, and what may have caused an increase or a decrease in this population!
 
 
-Description of the data source:
 
 Our data source is coming from NOAA.Gov. This link will bring you directly to the data source. This dataset has more than 30 + columns and 60,000+ rows so there is plenty of data to work with. We will not need all of this data for the main portion of the project but may need to go back and use it for a comparison later on. You can see where we filtered this very large dataset to contain only the chinook salmon populations in the Filter_Fish_Data.ipynb. 
 
