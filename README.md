@@ -26,11 +26,14 @@ This is a small mockup of potential visualization tools we can possibly use for 
 Models to consider:
 
 - Supervised vs Unsupervised
+	- We will first train and test a supervised model on select groups determined by nwr population name
+	- We will then run this model against non-tested groups determined by nwr population name
+	- Finally we will run an unsupervised model to create clusters and then test these custers with our unsupervided model/
 - Linear Regression models?
   - Scikit-Learn?  
 - Variables
 - Dependent: Number of spawners
-- Independent: Brood year, start year, end year, nwr population name, stream name
+- Independent: Brood year, start year, end year, nwr population name, stream name, fracwild, effective catch
 
 
 ## Database Mockup
