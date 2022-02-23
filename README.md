@@ -34,6 +34,9 @@ Models to consider:
 - Variables
 - Dependent: Number of spawners
 - Independent: Brood year, start year, end year, nwr population name, stream name, fracwild, effective catch
+### Progress
+- Preprocessed data
+- Added a draft of model
 
 
 ## Database Mockup
