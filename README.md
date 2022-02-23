@@ -7,6 +7,17 @@
 
 We have decided on these roles for one another but are not limited to role in any way. We will all be working through each role and helping one another with ideas and feedback which is important for the project to run smoothly!
 
+##OVERVIEW
+
+How many salmon do we need to spawn for streams X, X, and X to meet the benchmark?
+
+The goal of this project is to find out how many Salmon that we will have to harvest for years to come. To find this number, we will take the average number of spawners for X amount of years for X, X, and X streams. This average will define the benchmark that each stream will need to meet each year.
+
+We will then build a machine learning model to predict the number of salmon for the next year. We will also build a machine learning model to predict the fraction of wild salmon for the next year. Based on the predicted number of spawners, we will take the predicted fraction of wild salmon to determine the remaining number of fish we will need to spawn the following year.
+
+If we notice any fluctuations in population, we will pull in other datasets to determine possible reasons why the salmon population might’ve dipped or risen in the specific time period.
+
+
 ## VISUALIZATION OUTLINE
 
 This is a small mockup of potential visualization tools we can possibly use for our project:
