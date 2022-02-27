@@ -41,13 +41,42 @@ Models to consider:
 	- We will then run this model against non-tested groups determined by nwr population name
 	- Finally we will run an unsupervised model to create clusters and then test these custers with our unsupervided model/
 - Linear Regression models?
-  - Scikit-Learn?  
+   - Scikit-Learn?  
 - Variables
-- Dependent: Number of spawners
-- Independent: Brood year, start year, end year, nwr population name, stream name, fracwild, effective catch
+   - Dependent: Number of spawners
+   - Independent: Brood year, Number of Spawners (Previous Year and Two Years Prior), Fraction of Wild Salmon (Previous Year and Two Years Prior) and Effective Catch(Previous Year and Two Years Prior)
 ### Progress
 - Preprocessed data
 - Added a draft of model
+
+## Progress Made tothe Machine Learning Model as of 2/27
+- Completed primary data preprocessing in salmon_ml_preprocessing
+   - Deleted "Unnamed: 0" Column
+   - We had a substantial amount of duplicate rows so we dropped all duplicates
+   - Dropped all values from our variables that were below 0 (There were a lot of '-99' values instead of 'NaN'
+   - Created arrays to hold our Previous Year and Two Years Prior independendent values
+   - Deleted first row and added our Previous Year variables to the DataFrame
+   - Deleted first row of augmented DataFrame and assed our Two Years Prior arrays to the DataFrame
+   - Renamed columns to remove spaces
+   - Created salmon_preprocessed.csv
+- Completed secondary data preprocessing in salmon_ml_model (feature selection)
+   - Set up our dependencies
+   - Added a placeholder to connect to our pgAdmin Database
+   - loaded in salmon_preprocessed.csv
+   - Isolated target stream
+   - Delete thhe first two lines of data since it would hold the Previous Year and Two Years Prior values from the previous stream in the dataset
+   - Set up a scaler for our Previous Year and Two Years Prior columns
+   - Created a dataframe with the scaled data and then merged it with the original data frame with the unscaled columns removed
+   - Created variables to hold our features and our target 
+   - We decided that for our model to be forcasting, it was important that we use the Previous Year and Two Years Prior columns for our independent values as well as the Brood_Year
+   - Our features are: 'Brood_Year', 'Spawners_Prev_Yr_Sc', 'Eff_Catch_Prev_Yr_Sc', 'Fracwild_Prev_Yr_Sc', 'Spawners_Two_Yrs_Prior_Sc', 'Eff_Catch_Two_Yrs_Prior_Sc' and 'Fracwild_Two_Yrs_Prior_Sc'
+- Split our testing and training sets
+   - We have initially used the default testing and training ratios
+- Initiated a Multiple Linear Regression Model
+   - We chose this model because it seemed ideal for our continuos data type of our target
+   - We understand that our number of features and the nature of our data is not ideal for a linear regression model
+   - We will continue to adjust our features, use different data sets to train our model, adjust our scaling and we may need to pick a better model for our data set    	
+	
 
 
 ## Database Mockup
