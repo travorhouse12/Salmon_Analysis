@@ -35,6 +35,9 @@ We will then build a machine learning model to predict the number of salmon for 
 
 If we notice any fluctuations in population, we will pull in other datasets to determine possible reasons why the salmon population might’ve dipped or risen in the specific time period.
 
+Notes:
+X is being used as a placeholder until we decide on the streams and amount of years that we will use.
+
 
 ## VISUALIZATION OUTLINE
 
@@ -96,12 +99,10 @@ Models to consider:
    - We will continue to adjust our features, use different data sets to train our model, adjust our scaling and we may need to pick a better model for our data set    	
 
 ## Database Mockup
-Database systems to use:
+Database being leveraged:
 
-- Microsoft Excel
-- Postgres/pgAdmin
-- Amazon AWS
-- Mongo
+- PostegreSQL
+- AWS RDS
 
 
 Selected Topic: 
