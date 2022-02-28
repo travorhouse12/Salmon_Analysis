@@ -1,4 +1,22 @@
 # Salmon_Analysis
+
+# DASHBOARD
+
+Follow this link to get in touch with our google slides presentation for segment 2! You'll be able to see the mockup of our presentation and answering questions for our segment 2 requirements. 
+
+https://docs.google.com/presentation/d/10R9gvxBUOt1RNUjTFMUJGDPdhrtOrSDcN_3XxHq1TQQ/edit?usp=sharing
+
+The storyboard for the Dashboard can be located on the Google Slides draft as well as in the SB folder on the main branch. 
+
+EXTRA INFORMATION ON THE DASHBOARD SECTION
+
+- The blue print for the storyboard is just a mockup. There may be more on the storyboard then really will be completed for the dashboard. The more ideas the easier the process will be to complete it.
+
+- There will be a seperate storyboard/presentation created through Tableau as well as the app.
+
+- A JSON file was created from the preprocess CSV which you can find the code and the JSON file in the JSON folder above. Another JSON file will be created now that the ML is finished. 
+
+# Salmon_Analysis
 ## ROLES
 ### Square: Travor – His job is to manage the repository and make sure everything is up to date, and clean for our project.
 ### Triangle: Matt – Will be working on creating a mockup of a machine learning model.
@@ -76,8 +94,6 @@ Models to consider:
    - We chose this model because it seemed ideal for our continuos data type of our target
    - We understand that our number of features and the nature of our data is not ideal for a linear regression model
    - We will continue to adjust our features, use different data sets to train our model, adjust our scaling and we may need to pick a better model for our data set    	
-	
-
 
 ## Database Mockup
 Database systems to use:
