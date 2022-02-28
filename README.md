@@ -8,7 +8,7 @@ https://docs.google.com/presentation/d/10R9gvxBUOt1RNUjTFMUJGDPdhrtOrSDcN_3XxHq1
 
 The storyboard for the Dashboard can be located on the Google Slides draft as well as in the SB folder on the main branch. 
 
-Extra Information on the Daashboard Section
+Extra Information on the Dashboard Section
 
 - The blue print for the storyboard is just a mockup. There may be more on the storyboard then really will be completed for the dashboard. The more ideas the easier the process will be to complete it.
 
