@@ -1,6 +1,6 @@
 # Salmon_Analysis
 
-# DASHBOARD
+# Dashboard
 
 Follow this link to get in touch with our google slides presentation for segment 2! You'll be able to see the mockup of our presentation and answering questions for our segment 2 requirements. 
 
@@ -8,7 +8,7 @@ https://docs.google.com/presentation/d/10R9gvxBUOt1RNUjTFMUJGDPdhrtOrSDcN_3XxHq1
 
 The storyboard for the Dashboard can be located on the Google Slides draft as well as in the SB folder on the main branch. 
 
-EXTRA INFORMATION ON THE DASHBOARD SECTION
+Extra Information on the Daashboard Section
 
 - The blue print for the storyboard is just a mockup. There may be more on the storyboard then really will be completed for the dashboard. The more ideas the easier the process will be to complete it.
 
@@ -16,16 +16,13 @@ EXTRA INFORMATION ON THE DASHBOARD SECTION
 
 - A JSON file was created from the preprocess CSV which you can find the code and the JSON file in the JSON folder above. Another JSON file will be created now that the ML is finished. 
 
-# Salmon_Analysis
-## ROLES
-### Square: Travor – His job is to manage the repository and make sure everything is up to date, and clean for our project.
-### Triangle: Matt – Will be working on creating a mockup of a machine learning model.
-### Circle: Adam – His job is to create a mockup of a database with a set of sample data. Mainly, so that we can ensure our database
-### X: Nora – This member will oversee which technologies to use for each step of the project.
+## Description of Communication Protocols
 
-We have decided on these roles for one another but are not limited to role in any way. We will all be working through each role and helping one another with ideas and feedback which is important for the project to run smoothly!
+The salmon team makes use of various forms of communication, including:
+- Slack for basic back-and-forth communication about the project and questions.
+- Zoom for video calls during class and office hours. Our video calls are when we get most of our communication done.
 
-## OVERVIEW
+## Outline of the Project
 
 How many salmon do we need to spawn for streams X, X, and X to meet the benchmark?
 
@@ -37,6 +34,14 @@ If we notice any fluctuations in population, we will pull in other datasets to d
 
 Notes:
 X is being used as a placeholder until we decide on the streams and amount of years that we will use.
+
+### ROLES
+**Square:** Travor – His job is to manage the repository and make sure everything is up to date, and clean for our project.
+**Triangle:** Matt – Will be working on creating a mockup of a machine learning model.
+**Circle:** Adam – His job is to create a mockup of a database with a set of sample data. Mainly, so that we can ensure our database
+**X:** Nora – This member will oversee which technologies to use for each step of the project.
+
+We have decided on these roles for one another but are not limited to role in any way. We will all be working through each role and helping one another with ideas and feedback which is important for the project to run smoothly!
 
 
 ## VISUALIZATION OUTLINE
@@ -52,23 +57,6 @@ This is a small mockup of potential visualization tools we can possibly use for 
 -	Javascript/HTML for our website creation (i.e UFO / Mapping Earthquakes projects)
 -	Heatmaps
 -	Tableau Maps
-
-## Machine Learning Model
-
-Models to consider:
-
-- Supervised vs Unsupervised
-	- We will first train and test a supervised model on select groups determined by nwr population name
-	- We will then run this model against non-tested groups determined by nwr population name
-	- Finally we will run an unsupervised model to create clusters and then test these custers with our unsupervided model/
-- Linear Regression models?
-   - Scikit-Learn?  
-- Variables
-   - Dependent: Number of spawners
-   - Independent: Brood year, Number of Spawners (Previous Year and Two Years Prior), Fraction of Wild Salmon (Previous Year and Two Years Prior) and Effective Catch(Previous Year and Two Years Prior)
-### Progress
-- Preprocessed data
-- Added a draft of model
 
 ## Progress Made to the Machine Learning Model as of 2/27
 - Completed primary data preprocessing in salmon_ml_preprocessing
@@ -104,7 +92,6 @@ Database being leveraged:
 - PostegreSQL
 - AWS RDS
 
-
 Selected Topic: 
 
 Population Change in Chinook Salmon
@@ -118,7 +105,9 @@ Description Of The Data Source:
 
 Our data source is coming from NOAA.Gov. This link will bring you directly to the data source. This dataset has more than 30 + columns and 60,000+ rows so there is plenty of data to work with. We will not need all of this data for the main portion of the project but may need to go back and use it for a comparison later on. You can see where we filtered this very large dataset to contain only the chinook salmon populations in the Filter_Fish_Data.ipynb. 
 
-Link to our data source https://www.webapps.nwfsc.noaa.gov/apex/parrdata/inventory/tables/table/population_data_and_references_for_the_salmon_population_summary_sps_database 
+Link to our data source:
+
+https://www.webapps.nwfsc.noaa.gov/apex/parrdata/inventory/tables/table/population_data_and_references_for_the_salmon_population_summary_sps_database 
 
 Questions We Are Looking To Answer: 
 
