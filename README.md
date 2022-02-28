@@ -49,7 +49,7 @@ Models to consider:
 - Preprocessed data
 - Added a draft of model
 
-## Progress Made tothe Machine Learning Model as of 2/27
+## Progress Made to the Machine Learning Model as of 2/27
 - Completed primary data preprocessing in salmon_ml_preprocessing
    - Deleted "Unnamed: 0" Column
    - We had a substantial amount of duplicate rows so we dropped all duplicates
