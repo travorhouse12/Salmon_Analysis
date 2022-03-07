@@ -2,13 +2,23 @@
 
 # Dashboard
 
-Follow this link to get in touch with our google slides presentation for segment 2! You'll be able to see the mockup of our presentation and answering questions for our segment 2 requirements. 
+Follow this link to get in touch with our google slides presentation for segment 2! You'll be able to see the mockup of our presentation and answering questions for our segment 3 requirements. 
 
 https://docs.google.com/presentation/d/1_tHgs23qMZGwq0RtyLZu3yQ7rGeU5Wllu7NAGIvpXs4/edit#slide=id.g118c62022ce_0_177
 
-The storyboard for the Dashboard can be located on the Google Slides draft as well as in the SB folder on the main branch. 
 
-Extra Information on the Dashboard Section
+Link to the dashboard : https://public.tableau.com/views/Salmon_Analysis_Final_Project/Story1?:language=en-US&:display_count=n&:origin=viz_share_link
+
+KEY INFORMATION WITH TABLEAU
+
+- We connected our Tableau Desktop with postgres inorder to retrevie the ML model tables. In order to publish this Tableau story/dashboard I needed to extract from the live server to then use Tableau public just for the display of the story/dashboard.
+- There are interactive buttons at the top of each story to get you to the next visualization.
+
+
+The storyboard for the Dashboard can be located on the Google Slides draft as well as in the SB folder on the main branch.
+(no longer relevant now that the google slides are updated)
+
+Extra Information on the Dashboard Section (no longer relevant now that we are using Tableau)
 
 - The blue print for the storyboard is just a mockup. There may be more on the storyboard then really will be completed for the dashboard. The more ideas the easier the process will be to complete it.
 
