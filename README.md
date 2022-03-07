@@ -6,6 +6,8 @@ Follow this link to get in touch with our google slides presentation for segment
 
 https://docs.google.com/presentation/d/10R9gvxBUOt1RNUjTFMUJGDPdhrtOrSDcN_3XxHq1TQQ/edit?usp=sharing
 
+TABLEAU LINK : https://github.com/travorhouse12/Salmon_Analysis.git
+
 The storyboard for the Dashboard can be located on the Google Slides draft as well as in the SB folder on the main branch. 
 
 EXTRA INFORMATION ON THE DASHBOARD SECTION
