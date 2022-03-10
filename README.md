@@ -1,6 +1,6 @@
 # Salmon_Analysis
 
-# Dashboard
+## Dashboard
 
 Follow this link to get in touch with our google slides presentation for segment 2! You'll be able to see the mockup of our presentation and answering questions for our segment 3 requirements. 
 
@@ -11,39 +11,27 @@ Link to the dashboard : https://public.tableau.com/views/Salmon_Analysis_Final_P
 
 KEY INFORMATION WITH TABLEAU
 
-- We connected our Tableau Desktop with postgres inorder to retrevie the ML model tables. In order to publish this Tableau story/dashboard I needed to extract from the live server to then use Tableau public just for the display of the story/dashboard.
-- There are interactive buttons at the top of each story to get you to the next visualization.
-
+• We connected our Tableau Desktop with postgres inorder to retrevie the ML model tables. In order to publish this Tableau story/dashboard I needed to extract from the live server to then use Tableau public just for the display of the story/dashboard.
+• There are interactive buttons at the top of each story to get you to the next visualization.
 
 The storyboard for the Dashboard can be located on the Google Slides draft as well as in the SB folder on the main branch.
 (no longer relevant now that the google slides are updated)
 
 Extra Information on the Dashboard Section (no longer relevant now that we are using Tableau)
 
-- The blue print for the storyboard is just a mockup. There may be more on the storyboard then really will be completed for the dashboard. The more ideas the easier the process will be to complete it.
+• The blue print for the storyboard is just a mockup. There may be more on the storyboard then really will be completed for the dashboard. The more ideas the easier the process will be to complete it.
 
-- There will be a seperate storyboard/presentation created through Tableau as well as the app.
+• There will be a seperate storyboard/presentation created through Tableau as well as the app.
 
-- A JSON file was created from the preprocess CSV which you can find the code and the JSON file in the JSON folder above. Another JSON file will be created now that the ML is finished. 
-
-## Description of Communication Protocols
-
-The salmon team makes use of various forms of communication, including:
-- Slack for basic back-and-forth communication about the project and questions.
-- Zoom for video calls during class and office hours. Our video calls are when we get most of our communication done.
+• A JSON file was created from the preprocess CSV which you can find the code and the JSON file in the JSON folder above. Another JSON file will be created now that the ML is finished. 
 
 ## Outline of the Project
 
-How many salmon do we need to spawn for streams X, X, and X to meet the benchmark?
+The purpose of this project was to aid salmon hatcheries in identifying the future need of hatchery raised salmon by providing predictive population numbers of wild salmon. To do this, we will find a data set that has the salmon data we will need. We will perform some exploratory analysis. Then, we upload the data to a Postgres database. We leveraged an AWS RDS server for our Postgres database to make it publicly accesible.
 
-The goal of this project is to find out how many Salmon that we will have to harvest for years to come. To find this number, we will take the average number of spawners for X amount of years for X, X, and X streams. This average will define the benchmark that each stream will need to meet each year.
+Then, we cleaned the data using a mixture of SQL and Pandas until we got the data to a state that was usable, while dropping unnecesary columns.
 
-We will then build a machine learning model to predict the number of salmon for the next year. We will also build a machine learning model to predict the fraction of wild salmon for the next year. Based on the predicted number of spawners, we will take the predicted fraction of wild salmon to determine the remaining number of fish we will need to spawn the following year.
-
-If we notice any fluctuations in population, we will pull in other datasets to determine possible reasons why the salmon population might’ve dipped or risen in the specific time period.
-
-Notes:
-X is being used as a placeholder until we decide on the streams and amount of years that we will use.
+Next, we built our machine learning model that helped us predict salmon population for 2012 in the Imnaha river. Finally, we connected our Tableau to interact and pull data from our Postgres to analyze the salmon data as well as teh predicted salmon data to create visualizations.
 
 ### ROLES
 **Square:** Travor – His job is to manage the repository and make sure everything is up to date, and clean for our project.
@@ -52,21 +40,6 @@ X is being used as a placeholder until we decide on the streams and amount of ye
 **X:** Nora – This member will oversee which technologies to use for each step of the project.
 
 We have decided on these roles for one another but are not limited to role in any way. We will all be working through each role and helping one another with ideas and feedback which is important for the project to run smoothly!
-
-
-## VISUALIZATION OUTLINE
-
-This is a small mockup of potential visualization tools we can possibly use for our project:
-
--	Line Plots
--	Histograms
--	Scatter Plots
--	Matplotlib figures/diagrams
--	Bootstrap
--	HTML
--	Javascript/HTML for our website creation (i.e UFO / Mapping Earthquakes projects)
--	Heatmaps
--	Tableau Maps
 
 ## Progress Made to the Machine Learning Model as of 3/8
 ### Completed changes to primary data preprocessing and renamed file salmon_preprocessing_ws
@@ -107,7 +80,7 @@ Database being leveraged:
 
 Selected Topic: 
 
-Population Change in Chinook Salmon
+Population Change in Chinook Salmon in the Imnaha River.
 
 Reason Why We Selected This Data:
 
