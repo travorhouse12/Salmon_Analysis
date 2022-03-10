@@ -68,7 +68,7 @@ This is a small mockup of potential visualization tools we can possibly use for 
 -	Heatmaps
 -	Tableau Maps
 
-## Progress Made to the Machine Learning Model as of 3/6
+## Progress Made to the Machine Learning Model as of 3/8
 - Completed changes to primary data preprocessing and renamed file salmon_preprocessing_ws
    - Dropped "Unamed: 0", "Start Year", "End Year" and "Effective Catch" since they have no impact on our more focused feature approach
    - Found additional duplicate data that was not dropped due to variance in the "Start Year" and "End Year" Columns despite all the remaining data being duplicate values. 
