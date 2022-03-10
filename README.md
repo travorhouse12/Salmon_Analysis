@@ -69,7 +69,7 @@ This is a small mockup of potential visualization tools we can possibly use for 
 -	Tableau Maps
 
 ## Progress Made to the Machine Learning Model as of 3/8
-- Completed changes to primary data preprocessing and renamed file salmon_preprocessing_ws
+### Completed changes to primary data preprocessing and renamed file salmon_preprocessing_ws
    - Dropped "Unamed: 0", "Start Year", "End Year" and "Effective Catch" since they have no impact on our more focused feature approach
    - Found additional duplicate data that was not dropped due to variance in the "Start Year" and "End Year" Columns despite all the remaining data being duplicate values. 
    - Dropped all values from our variables that were below 0 (There were a lot of '-99' values instead of 'NaN'
@@ -79,23 +79,23 @@ This is a small mockup of potential visualization tools we can possibly use for 
    - Renamed columns to remove spaces
    - Created salmon_preprocessed_ws.csv
    - Set up our connection with Postgres on our AWS server
-- Completed secondary data preprocessing in salmon_ml_model (feature selection)
+### Completed secondary data preprocessing in salmon_ml_model (feature selection)
    - Set up our dependencies
    - Connected our Postgres database and loaded tabled data into notebook
    - Isolated target stream
    - Deleted first three lines since it holds the incorrect data for this targetted stream.
-- Completed determining target and the features   
+### Completed determining target and the features   
    - Created variables to hold our features and our target 
    - Our biggest change to our model was determining that our features should just be the Wild Spawners data from the three previous years.  
-   - Our features are: 'Brood_Year', 'Wild_Spawners_Prev_Yr', 'Wild_Spawners_Two_Yrs_Prior' and 'Wild_Spawners_Two_Yrs_Prior'
-- Split our testing and training sets
+   - Our features are: 'Wild_Spawners_Prev_Yr', 'Wild_Spawners_Two_Yrs_Prior' and 'Wild_Spawners_Two_Yrs_Prior'
+### Split our testing and training sets
    - We adjusted our training rations to 80/20
-- Initiated a Multiple Linear Regression Model
+### Initiated a Multiple Linear Regression Model
    - We chose this model because it seemed ideal for our continuos data type of our target
    - We tried using different models such as the ridge model but our data was not diverse enough for it to be effective.
    - We ultimately decided to change our features and target to create a better performing model.
-- Accuracy and Performance
-   - Our model's performance is not ideal but we have achieved an r-squared value of .64 and a mean squared error of 673.
+### Accuracy and Performance
+   - Our model's performance is not ideal but we have achieved an r-squared value of .61 and a mean squared error of 673.
    - We will continue to adjust our model or train different streams to achieve a higher score.
    - Our data has been hard to predict due to the nature of salmon spawning. Salmon could return to spawn in as soon as two years or up to 5-6 years which makes the predictability difficult.     	
 
