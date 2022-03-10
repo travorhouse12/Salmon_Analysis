@@ -2,13 +2,23 @@
 
 # Dashboard
 
-Follow this link to get in touch with our google slides presentation for segment 2! You'll be able to see the mockup of our presentation and answering questions for our segment 2 requirements. 
+Follow this link to get in touch with our google slides presentation for segment 2! You'll be able to see the mockup of our presentation and answering questions for our segment 3 requirements. 
 
-https://docs.google.com/presentation/d/10R9gvxBUOt1RNUjTFMUJGDPdhrtOrSDcN_3XxHq1TQQ/edit?usp=sharing
+https://docs.google.com/presentation/d/1_tHgs23qMZGwq0RtyLZu3yQ7rGeU5Wllu7NAGIvpXs4/edit#slide=id.g118c62022ce_0_177
 
-The storyboard for the Dashboard can be located on the Google Slides draft as well as in the SB folder on the main branch. 
 
-Extra Information on the Dashboard Section
+Link to the dashboard : https://public.tableau.com/views/Salmon_Analysis_Final_Project/Story1?:language=en-US&:display_count=n&:origin=viz_share_link
+
+KEY INFORMATION WITH TABLEAU
+
+- We connected our Tableau Desktop with postgres inorder to retrevie the ML model tables. In order to publish this Tableau story/dashboard I needed to extract from the live server to then use Tableau public just for the display of the story/dashboard.
+- There are interactive buttons at the top of each story to get you to the next visualization.
+
+
+The storyboard for the Dashboard can be located on the Google Slides draft as well as in the SB folder on the main branch.
+(no longer relevant now that the google slides are updated)
+
+Extra Information on the Dashboard Section (no longer relevant now that we are using Tableau)
 
 - The blue print for the storyboard is just a mockup. There may be more on the storyboard then really will be completed for the dashboard. The more ideas the easier the process will be to complete it.
 
@@ -58,33 +68,36 @@ This is a small mockup of potential visualization tools we can possibly use for 
 -	Heatmaps
 -	Tableau Maps
 
-## Progress Made to the Machine Learning Model as of 2/27
-- Completed primary data preprocessing in salmon_ml_preprocessing
-   - Deleted "Unnamed: 0" Column
-   - We had a substantial amount of duplicate rows so we dropped all duplicates
+## Progress Made to the Machine Learning Model as of 3/8
+- Completed changes to primary data preprocessing and renamed file salmon_preprocessing_ws
+   - Dropped "Unamed: 0", "Start Year", "End Year" and "Effective Catch" since they have no impact on our more focused feature approach
+   - Found additional duplicate data that was not dropped due to variance in the "Start Year" and "End Year" Columns despite all the remaining data being duplicate values. 
    - Dropped all values from our variables that were below 0 (There were a lot of '-99' values instead of 'NaN'
-   - Created arrays to hold our Previous Year and Two Years Prior independendent values
-   - Deleted first row and added our Previous Year variables to the DataFrame
-   - Deleted first row of augmented DataFrame and assed our Two Years Prior arrays to the DataFrame
+   - Multiplied the "Number of Spawners" by "Fracwild" to create Wild Spawners, which will be our target for the model. 
+   - Created arrays to hold our Previous Year, Two Years Prior, and Three Years Prior Wild Spawners data
+   - Added arrays in a staggered fashion to the dataframe 
    - Renamed columns to remove spaces
-   - Created salmon_preprocessed.csv
+   - Created salmon_preprocessed_ws.csv
+   - Set up our connection with Postgres on our AWS server
 - Completed secondary data preprocessing in salmon_ml_model (feature selection)
    - Set up our dependencies
-   - Added a placeholder to connect to our pgAdmin Database
-   - loaded in salmon_preprocessed.csv
+   - Connected our Postgres database and loaded tabled data into notebook
    - Isolated target stream
-   - Delete thhe first two lines of data since it would hold the Previous Year and Two Years Prior values from the previous stream in the dataset
-   - Set up a scaler for our Previous Year and Two Years Prior columns
-   - Created a dataframe with the scaled data and then merged it with the original data frame with the unscaled columns removed
+   - Deleted first three lines since it holds the incorrect data for this targetted stream.
+- Completed determining target and the features   
    - Created variables to hold our features and our target 
-   - We decided that for our model to be forcasting, it was important that we use the Previous Year and Two Years Prior columns for our independent values as well as the Brood_Year
-   - Our features are: 'Brood_Year', 'Spawners_Prev_Yr_Sc', 'Eff_Catch_Prev_Yr_Sc', 'Fracwild_Prev_Yr_Sc', 'Spawners_Two_Yrs_Prior_Sc', 'Eff_Catch_Two_Yrs_Prior_Sc' and 'Fracwild_Two_Yrs_Prior_Sc'
+   - Our biggest change to our model was determining that our features should just be the Wild Spawners data from the three previous years.  
+   - Our features are: 'Brood_Year', 'Wild_Spawners_Prev_Yr', 'Wild_Spawners_Two_Yrs_Prior' and 'Wild_Spawners_Two_Yrs_Prior'
 - Split our testing and training sets
-   - We have initially used the default testing and training ratios
+   - We adjusted our training rations to 80/20
 - Initiated a Multiple Linear Regression Model
    - We chose this model because it seemed ideal for our continuos data type of our target
-   - We understand that our number of features and the nature of our data is not ideal for a linear regression model
-   - We will continue to adjust our features, use different data sets to train our model, adjust our scaling and we may need to pick a better model for our data set    	
+   - We tried using different models such as the ridge model but our data was not diverse enough for it to be effective.
+   - We ultimately decided to change our features and target to create a better performing model.
+- Accuracy and Performance
+   - Our model's performance is not ideal but we have achieved an r-squared value of .64 and a mean squared error of 673.
+   - We will continue to adjust our model or train different streams to achieve a higher score.
+   - Our data has been hard to predict due to the nature of salmon spawning. Salmon could return to spawn in as soon as two years or up to 5-6 years which makes the predictability difficult.     	
 
 ## Database Mockup
 Database being leveraged:
