@@ -2,12 +2,13 @@
 
 ## Dashboard
 
-Follow this link to get in touch with our google slides presentation for segment 2! You'll be able to see the mockup of our presentation and answering questions for our segment 3 requirements. 
+Click below to check out our Salmon Anlaysis final presentation!
 
-https://docs.google.com/presentation/d/1_tHgs23qMZGwq0RtyLZu3yQ7rGeU5Wllu7NAGIvpXs4/edit#slide=id.g118c62022ce_0_177
+[Click Me to Go To Our Google Slides Presentation](https://docs.google.com/presentation/d/1_tHgs23qMZGwq0RtyLZu3yQ7rGeU5Wllu7NAGIvpXs4/edit#slide=id.g118c62022ce_0_177)
 
+Click below to get a hold of our final Tableau Dashboard where you are able to filter by brood year on select pages and use the interactive "Click Me to Move On!" to keep you on the right path!
 
-Link to the dashboard : https://public.tableau.com/views/Salmon_Analysis_Final_Project/Story1?:language=en-US&:display_count=n&:origin=viz_share_link
+[DASHBOARD LINK. CLICK ME](https://public.tableau.com/views/Salmon_Analysis_Dashboard/Story9?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 KEY INFORMATION WITH TABLEAU
 
