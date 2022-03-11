@@ -9,6 +9,9 @@ Click below to check out our Salmon Anlaysis final presentation!
 Click below to get a hold of our final Tableau Dashboard where you are able to filter by brood year on select pages and use the interactive "Click Me to Move On!" to keep you on the right path!
 
 [DASHBOARD LINK. CLICK ME](https://public.tableau.com/views/Salmon_Analysis_Dashboard/Story9?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+If you see the snapshot below when you click the Dashboard link, then congrats you made it there properly!
+
+<img width="1285" alt="Screen Shot 2022-03-10 at 8 29 38 PM" src="https://user-images.githubusercontent.com/91299616/157802428-c814991d-7537-455b-b71c-9401e7ab52fb.png">
 
 KEY INFORMATION WITH TABLEAU
 
