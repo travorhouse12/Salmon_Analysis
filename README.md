@@ -13,18 +13,10 @@ Click below to get a hold of our final Tableau Dashboard where you are able to f
 KEY INFORMATION WITH TABLEAU
 
 • We connected our Tableau Desktop with postgres inorder to retrevie the ML model tables. In order to publish this Tableau story/dashboard I needed to extract from the live server to then use Tableau public just for the display of the story/dashboard.
-• There are interactive buttons at the top of each story to get you to the next visualization.
 
-The storyboard for the Dashboard can be located on the Google Slides draft as well as in the SB folder on the main branch.
-(no longer relevant now that the google slides are updated)
+• There are interactive buttons at the top of each story to get you to the next visualization. that state "Click Me to Move On!".
 
-Extra Information on the Dashboard Section (no longer relevant now that we are using Tableau)
-
-• The blue print for the storyboard is just a mockup. There may be more on the storyboard then really will be completed for the dashboard. The more ideas the easier the process will be to complete it.
-
-• There will be a seperate storyboard/presentation created through Tableau as well as the app.
-
-• A JSON file was created from the preprocess CSV which you can find the code and the JSON file in the JSON folder above. Another JSON file will be created now that the ML is finished. 
+• Interactive sliders to filter the brood year on a few of the charts to give you a smaller chart to analyze.
 
 ## Outline of the Project
 
