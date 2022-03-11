@@ -14,7 +14,7 @@ KEY INFORMATION WITH TABLEAU
 
 • We connected our Tableau Desktop with postgres inorder to retrevie the ML model tables. In order to publish this Tableau story/dashboard I needed to extract from the live server to then use Tableau public just for the display of the story/dashboard.
 
-• There are interactive buttons at the top of each story to get you to the next visualization. that state "Click Me to Move On!".
+• There are interactive buttons at the top of each story to get you to the next visualization.
 
 • Interactive sliders to filter the brood year on a few of the charts to give you a smaller chart to analyze.
 
