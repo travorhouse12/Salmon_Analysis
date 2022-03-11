@@ -1,0 +1,27 @@
+Machine learning notes:
+Slide 10
+- We had to derimine if and how our data could answer our questions
+- We preprocessed our data by removing irrelevant columns, duplicate rows and null values.
+- We decided that Number of spawners, specifically the wild spawners would be our target. 
+- We then created columns that reflected the three prior years of wild spawners
+- From that we trained our model on a single population which was the Imnaha River
+- We created a three year prediction using the model.
+- We then chose a population that was endangered and decided to run that population through our model
+we then trained another linear regression model on the Wenatchee and compared the results
+- We also compared Wild Spawners with Hatchery spawners and got a better understanding of the population as a whole
+
+Slide 11 
+- Here is an overview of our model and the steps we took to get there.
+- After preprocessing our data we had 4 columns and we created our targets and features off of those initial columns
+- We multiplied Frac_Wild by Number of spawners to get our target and then we staggered our number of wild spawners by a row to get our previous year and then repeated the process to get two and three years prior
+- We then trained our model using a linear regression model since it was well suited for contiuous data. There were other models such as a ridge, lasso and even some nueral etworks but they werent as well suited to handle our data
+- On our original model using the Imnaha River, We achieved an R-suared score of .62
+
+Slide 12
+- Using our trained model, we were able to predict the three years ast our data set. 
+- We had to run the model for each predicted year. 
+- for 2013 and 14, we had to use the predicted values from the previous year to make a prediction.. Pretty Cool!
+- You can also see how our Predicted Wild Spawners column somewhat parodied our actual data
+- We then ran our endangered Wenatchee population thrugh the model and got an R-sqared value of .5 which isn't but but definitely not great
+- So we decied to train a separate model on this data set and we achieved a score of .71 which was better than our original data in the original model
+- This proved to us that our model may not be applicable to other populations but our code definitely can be.
